@@ -5,11 +5,12 @@ dotenv.config();
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
-const generateContent = async (contents: string) => {
+const generateContent = async (contents: string, config?: Record<string, unknown>) => {
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash',
       contents,
+      ...(config ? { config } : {}),
     });
 
     return response?.text ?? response;

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fake News Detector",
-  description: "Check whether a news title looks credible using MediaStack coverage.",
+  title: "CivicResolve AI - Open-Source Social Problem Resolution System",
+  description: "AI-powered civic grievance resolution assistant, structured action roadmap generator, urgency classifier, and civic analytics.",
 };
 
 export default function RootLayout({
