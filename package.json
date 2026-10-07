@@ -1,0 +1,10 @@
+{
+  "name": "civic-resolve-ai-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix fake-news-detection run dev",
+    "build": "npm --prefix fake-news-detection run build",
+    "start": "npm --prefix fake-news-detection start"
+  }
+}
